@@ -1,6 +1,6 @@
 <img align="left" width="0" height="192px" hspace="10"/>
 <h1 align="center">
-  <br><img src="project-logo.jpeg" style="width: 122px;height: 122px;border-radius: 61px;">
+  <br><img src="project-logo.jpeg">
   <br>
   telegram-id-bot
   <br>
