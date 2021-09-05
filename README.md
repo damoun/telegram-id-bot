@@ -10,7 +10,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/damoun/telegram-id-bot.svg"></a>
   <a href="https://travis-ci.org/damoun/telegram-id-bot">
-      <img src="https://img.shields.io/travis/damoun/telegram-id-bot">
+      <img src="https://img.shields.io/github/damoun/telegram-id-bot">
   </a>
 </p>
 
@@ -31,7 +31,6 @@ $ go get -u https://github.com/damoun/telegram-id-bot
 
 ```sh
 $ GOOS=linux go build main.go
-$ zip telegram-id-bot.zip main
 $ cd tf
 $ terraform init
 $ terraform apply
