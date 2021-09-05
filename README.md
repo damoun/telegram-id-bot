@@ -1,6 +1,5 @@
-<img align="left" width="0" height="192px" hspace="10"/>
 <h1 align="center">
-  <br><img src="project-logo.jpeg">
+  <br><img src="project-logo.svg" height="192px">
   <br>
   telegram-id-bot
   <br>
@@ -31,7 +30,11 @@ $ go get -u https://github.com/damoun/telegram-id-bot
 ## Getting Started
 
 ```sh
-$ GOOS=linux go build main.go && zip function.zip main
+$ GOOS=linux go build main.go
+$ zip telegram-id-bot.zip main
+$ cd tf
+$ terraform init
+$ terraform apply
 ```
 
 ## Contributing
