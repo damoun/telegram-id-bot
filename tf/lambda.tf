@@ -7,8 +7,7 @@ module "lambda_function" {
     handler                = "main"
     runtime                = "go1.x"
 
-    create_package         = false
-    local_existing_package = "${path.module}/../telegram-id-bot.zip"
+    source_path            = "${path.module}/../main"
 
     publish                = true
     maximum_retry_attempts = 0

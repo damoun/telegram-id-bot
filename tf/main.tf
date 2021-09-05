@@ -1,4 +1,9 @@
 terraform {
+    backend "s3" {
+        bucket = "telegram-id-bot-terraform-state"
+        key    = "tfstate"
+        region = "eu-west-3"
+    }
     required_providers {
         aws = {
             source = "hashicorp/aws"
@@ -7,6 +12,13 @@ terraform {
             source = "yi-jiayu/telegram"
             version = "0.2.1"
         }
+    }
+}
+resource "aws_s3_bucket" "terraform_state" {
+    bucket = "telegram-id-bot-terraform-state"
+
+    versioning {
+        enabled = true
     }
 }
 

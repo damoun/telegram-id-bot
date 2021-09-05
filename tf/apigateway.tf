@@ -2,7 +2,7 @@ module "api_gateway" {
     source                 = "terraform-aws-modules/apigateway-v2/aws"
     version                = "1.2.0"
 
-    name                   = "telegram-id-http"
+    name                   = "telegram-id-bot"
     description            = "HTTP to receive request for telegram id bot"
     protocol_type          = "HTTP"
 
@@ -17,7 +17,7 @@ module "api_gateway" {
     integrations           = {
         "ANY /{proxy+}" = {
             lambda_arn             = module.lambda_function.lambda_function_arn
-            payload_format_version = "1.0"
+            payload_format_version = "2.0"
             timeout_milliseconds   = 12000
         }
     }
