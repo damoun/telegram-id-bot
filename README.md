@@ -10,7 +10,7 @@
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/github/license/damoun/telegram-id-bot.svg"></a>
   <a href="https://travis-ci.org/damoun/telegram-id-bot">
-      <img src="https://img.shields.io/github/damoun/telegram-id-bot">
+      <img src="https://github.com/damoun/telegram-id-bot/actions/workflows/build/badge.svg">
   </a>
 </p>
 
