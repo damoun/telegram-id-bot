@@ -1,4 +1,4 @@
-name: Build Golang and Deploy
+name: Deploy
 on:
   push:
     branches:

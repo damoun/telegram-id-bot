@@ -1,0 +1,22 @@
+name: Build
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_golang:
+    name: "Build 📦️"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v2
+      - name: Set up Golang environment
+        uses: actions/setup-go@v2
+      - name: Compile Golang
+        run: go build main.go
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: terraform-id-bot
+          path: main
+          if-no-files-found: error
