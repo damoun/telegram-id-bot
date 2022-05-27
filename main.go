@@ -31,7 +31,7 @@ func GetReply(update tgbotapi.Update) string {
 	if update.Message.IsCommand() {
 		switch update.Message.Command() {
 			case "getid":
-				return strconv.Itoa(update.Message.From.ID)
+				return strconv.FormatInt(update.Message.From.ID, 10)
 			case "getgroupid":
 				if update.Message.Chat.Type != "private" {
 					return strconv.FormatInt(update.Message.Chat.ID, 10)
