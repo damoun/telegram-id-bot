@@ -17,6 +17,8 @@ jobs:
           TF_VAR_telegram_api_token: ${{ secrets.TELEGRAM_API_TOKEN }}
           AWS_ACCESS_KEY_ID:  ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      - name: Create fake bin
+        run: touch main
       - name: Apply Terraform plan
         run: terraform -chdir=tf destroy -auto-approve
         env:
