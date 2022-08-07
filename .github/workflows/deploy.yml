@@ -26,7 +26,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: telegram
-      url: t.me/lambdaidbot
+      url: https://t.me/lambdaidbot
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
