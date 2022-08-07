@@ -14,13 +14,6 @@ terraform {
         }
     }
 }
-resource "aws_s3_bucket" "terraform_state" {
-    bucket = "telegram-id-bot-terraform-state"
-
-    versioning {
-        enabled = true
-    }
-}
 
 variable "telegram_api_token" {
     type        = string
