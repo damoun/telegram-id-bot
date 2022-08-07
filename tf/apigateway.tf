@@ -1,6 +1,6 @@
 module "api_gateway" {
     source                 = "terraform-aws-modules/apigateway-v2/aws"
-    version                = "1.2.0"
+    version                = "2.0.0"
 
     name                   = "telegram-id-bot"
     description            = "HTTP to receive request for telegram id bot"
