@@ -1,6 +1,6 @@
 module "lambda_function" {
     source                 = "terraform-aws-modules/lambda/aws"
-    version                = "4.0.0"
+    version                = "4.0.1"
 
     function_name          = "telegram-id-bot"
     description            = "Function to respond for telegram id bot"
