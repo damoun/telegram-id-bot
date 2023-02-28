@@ -9,11 +9,23 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    reviewers:
+      - damoun
+    assignees:
+      - dependabot
   - package-ecosystem: "terraform"
     directory: "/tf"
     schedule:
       interval: "weekly"
+    reviewers:
+      - damoun
+    assignees:
+      - dependabot
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "weekly"
+    reviewers:
+      - damoun
+    assignees:
+      - dependabot
